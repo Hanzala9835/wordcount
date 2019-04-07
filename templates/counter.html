@@ -1,0 +1,17 @@
+
+<h3>Welcome to Wordcount Website</h3>
+<br>
+<a href="{% url 'home' %}">Count Again</a>
+<h4>Your Text :-</h4>
+{{ fulltext }}
+<br>
+<h4>Total Word = {{ word }}</h4>
+<br><br>
+
+<h4>Word Count</h4>
+
+{% for word,value in word_dict %}
+
+{{ word }} = {{ value }}
+<br>
+{% endfor %}
